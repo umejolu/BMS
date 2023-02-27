@@ -69,7 +69,9 @@ Adafruit_ADS1115 ads2(0x49);
 Scanning...
 I2C device found at address 0x3C  !
 I2C device found at address 0x48  !
-done
+
+0x3C är display
+0x48 är ADC
 
 */
 // Setup a oneWire instance to communicate with any OneWire devices (not just Maxim/Dallas temperature ICs)
@@ -86,7 +88,9 @@ DeviceAddress insideThermometer;
     Frame Buffer Examples: clearBuffer/sendBuffer. Fast, but may not work with all Arduino boards because of RAM consumption
     Page Buffer Examples: firstPage/nextPage. Less RAM usage, should work with all Arduino boards.
     U8x8 Text Only Example: No RAM usage, direct communication with display controller. No graphics, 8x8 Text only.
-    
+
+
+    Lilla displayen (pchbutik 1667 har I2C-adress 0x3C
 */
 U8G2_SH1106_128X64_NONAME_F_HW_I2C display(U8G2_R0, /* reset=*/ U8X8_PIN_NONE);
 
